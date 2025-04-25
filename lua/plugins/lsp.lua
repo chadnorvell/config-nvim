@@ -64,7 +64,22 @@ return {
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             local servers = {
+                eslint = {
+                    on_attach = function(client, bufnr)
+                        local wk = require("which-key")
+
+                        wk.add({
+                            {
+                                "<leader>bx",
+                                "EslintFixAll<CR>",
+                                buffer = bufnr,
+                                desc = "quick fix",
+                            },
+                        })
+                    end,
+                },
                 lua_ls = {},
+                tailwindcss = {},
                 ts_ls = {},
             }
 
