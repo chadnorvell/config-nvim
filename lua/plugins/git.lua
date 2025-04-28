@@ -1,8 +1,16 @@
 return {
     {
-        "tpope/vim-fugitive",
+        "NeogitOrg/neogit",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "sindrets/diffview.nvim",
+            "nvim-telescope/telescope.nvim",
+        },
+        setup = function()
+            require("neogit").setup({})
+        end,
         keys = {
-            { "<leader>gs", "<cmd>Git<cr>", desc = "git status" },
+            { "<leader>gs", "<cmd>Neogit<cr>", desc = "git status" },
         },
     },
     {
