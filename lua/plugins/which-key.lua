@@ -8,6 +8,8 @@ return {
             { "<leader>f", group = "files" },
             { "<leader>g", group = "git" },
             { "<leader>s", group = "search" },
+            { "<leader>u", group = "ui" },
+            { "<leader>uc", group = "color scheme" },
             { "<leader>x", group = "diagnostics" },
             { "<leader>fs", vim.cmd.w, desc = "save" },
             { "<leader>fw", vim.cmd.Ex, desc = "netrw" },

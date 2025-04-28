@@ -43,5 +43,13 @@ return {
             end,
             desc = "tree",
         },
+        -- notifier
+        {
+            "<leader>xn",
+            function()
+                require("snacks").notifier.show_history()
+            end,
+            desc = "notifications",
+        },
     },
 }
