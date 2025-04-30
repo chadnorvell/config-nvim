@@ -8,7 +8,7 @@ return {
         local cmp = require("cmp")
 
         cmp.setup({
-            mapping = {
+            mapping = cmp.mapping.preset.insert({
                 ["<Tab>"] = cmp.mapping(function(fallback)
                     -- Confirm with tab, and if no entry is selected, confirm the first item
                     if cmp.visible() then
@@ -21,7 +21,7 @@ return {
                         fallback()
                     end
                 end, { "i", "s", "c" }),
-            },
+            }),
 
             snippet = {
                 expand = function(args)
@@ -36,6 +36,7 @@ return {
 
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
+                { name = "nvim_lsp_signature_help" },
                 { name = "buffer" },
             }),
         })

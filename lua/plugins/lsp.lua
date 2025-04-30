@@ -95,4 +95,12 @@ return {
             end
         end,
     },
+    {
+        "ray-x/lsp_signature.nvim",
+        event = "InsertEnter",
+        opts = {
+            bind = true,
+            toggle_key = "<D-t>",
+        },
+    }
 }
