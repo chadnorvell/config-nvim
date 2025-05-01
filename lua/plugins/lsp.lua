@@ -21,6 +21,7 @@ return {
                             mode = { "n", "x" },
                         },
 
+                        { "<leader>ch", vim.lsp.buf.hover, desc = "hover" },
                         { "<leader>cl", vim.lsp.buf.declaration, desc = "declaration" },
                         { "<leader>cr", vim.lsp.buf.rename, desc = "rename" },
 
