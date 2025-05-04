@@ -5,14 +5,18 @@ return {
         spec = {
             { "<leader>b", group = "buffers" },
             { "<leader>c", group = "code" },
-            { "<leader>f", group = "files" },
             { "<leader>g", group = "git" },
             { "<leader>s", group = "search" },
+            { "<leader>x", group = "diagnostics" },
+
+            { "<leader>f", group = "files" },
+            { "<leader>fs", vim.cmd.w, desc = "save" },
+
+            { "<leader>q", group = "quit" },
+            { "<leader>qa", vim.cmd.qa, desc = "all" },
+
             { "<leader>u", group = "ui" },
             { "<leader>uc", group = "color scheme" },
-            { "<leader>x", group = "diagnostics" },
-            { "<leader>fs", vim.cmd.w, desc = "save" },
-            { "<leader>fw", vim.cmd.Ex, desc = "netrw" },
         },
     },
     keys = {

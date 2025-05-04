@@ -8,7 +8,7 @@ return {
     opts = {
         bigfile = { enabled = true },
         dashboard = { enabled = false },
-        explorer = { enabled = true },
+        explorer = { enabled = false },
         indent = { enabled = true },
         input = { enabled = true },
         notifier = { enabled = true },
@@ -35,13 +35,12 @@ return {
             end,
             desc = "kill others",
         },
-        -- explorer
         {
-            "<leader>ft",
+            "<leader>b<BS>",
             function()
-                require("snacks").explorer()
+                require("snacks").bufdelete.all()
             end,
-            desc = "tree",
+            desc = "kill all",
         },
         -- notifier
         {
