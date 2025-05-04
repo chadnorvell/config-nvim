@@ -80,7 +80,16 @@ return {
                     end,
                 },
                 lua_ls = {},
-                tailwindcss = {},
+                tailwindcss = {
+                    classFunctions = {
+                        "clsx",
+                        "cn",
+                        "cva",
+                        "tv",
+                        "tw",
+                        "twMerge",
+                    },
+                },
                 ts_ls = {},
             }
 
@@ -103,5 +112,5 @@ return {
             bind = true,
             toggle_key = "<D-t>",
         },
-    }
+    },
 }
