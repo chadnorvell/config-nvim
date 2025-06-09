@@ -55,6 +55,8 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
     end,
 })
 
+vim.filetype.add({ extension = { fidl = "fidl" } })
+
 -- Share the system clipboard
 -- Loaded async because otherwise it can increase startup time
 vim.schedule(function()

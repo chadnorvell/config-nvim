@@ -65,6 +65,7 @@ return {
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             local servers = {
+                clangd = {},
                 eslint = {
                     on_attach = function(client, bufnr)
                         local wk = require("which-key")
@@ -80,6 +81,7 @@ return {
                     end,
                 },
                 lua_ls = {},
+                rust_analyzer = {},
                 tailwindcss = {
                     classFunctions = {
                         "clsx",
