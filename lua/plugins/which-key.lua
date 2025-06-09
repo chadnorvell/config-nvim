@@ -7,6 +7,7 @@ return {
             { "<leader>c", group = "code" },
             { "<leader>g", group = "git" },
             { "<leader>s", group = "search" },
+            { "<leader>t", group = "tabs" },
             { "<leader>x", group = "diagnostics" },
 
             { "<leader>f", group = "files" },
@@ -17,6 +18,8 @@ return {
 
             { "<leader>u", group = "ui" },
             { "<leader>uc", group = "color scheme" },
+
+            { "<leader>H", vim.cmd.noh, desc = "clear highlight" }
         },
     },
     keys = {

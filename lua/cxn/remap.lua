@@ -15,3 +15,11 @@ vim.keymap.set("n", "<a-Left>", ":vertical:resize +4<CR>")
 vim.keymap.set("n", "<a-Down>", ":resize -4<CR>")
 vim.keymap.set("n", "<a-Up>", ":resize +4<CR>")
 vim.keymap.set("n", "<a-Right>", ":vertical:resize -4<CR>")
+
+-- Move between tabs
+vim.keymap.set("n", "<a-[>", ":tabp<CR>")
+vim.keymap.set("n", "<a-]>", ":tabn<CR>")
+
+-- Re-order tabs
+vim.keymap.set("n", "<a-,>", ":-tabmove<CR>")
+vim.keymap.set("n", "<a-.>", ":+tabmove<CR>")
