@@ -81,6 +81,7 @@ return {
                     end,
                 },
                 lua_ls = {},
+                nil_ls = {},
                 rust_analyzer = {},
                 tailwindcss = {
                     classFunctions = {
