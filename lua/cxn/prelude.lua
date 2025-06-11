@@ -36,6 +36,7 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
         "*.css",
         "*.ex",
         "*.exs",
+        "*.nix",
         "*.rb",
 
         "*.js",
