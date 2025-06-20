@@ -66,6 +66,9 @@ return {
 
             local servers = {
                 clangd = {},
+                elixirls = {
+                    cmd = { "/etc/profiles/per-user/chad/bin/elixir-ls" },
+                },
                 eslint = {
                     on_attach = function(client, bufnr)
                         local wk = require("which-key")
