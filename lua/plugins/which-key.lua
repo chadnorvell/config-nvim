@@ -18,6 +18,7 @@ return {
 
             { "<leader>u", group = "ui" },
             { "<leader>uc", group = "color scheme" },
+            { "<leader>uF", ":let g:neovide_fullscreen = !g:neovide_fullscreen<CR>", desc = "full screen"},
 
             { "<leader>H", vim.cmd.noh, desc = "clear highlight" }
         },
